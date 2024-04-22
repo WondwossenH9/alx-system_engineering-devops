@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Export data in the CSV format"""
+"""Export data in the CSV format"""
 import csv
 import requests
 import sys
@@ -8,7 +8,7 @@ if __name__ == '__main__':
     user = sys.argv[1]
     url_user = 'https://jsonplaceholder.typicode.com/users/' + user
     res = requests.get(url_user)
-    """Anything"""
+    """ANYTHING"""
     user_name = res.json().get('username')
     task = url_user + '/todos'
     res = requests.get(task)
@@ -17,7 +17,7 @@ if __name__ == '__main__':
     with open('{}.csv'.format(user), 'w') as csvfile:
         for task in tasks:
             completed = task.get('completed')
-            """Completed"""
+            """Complete"""
             title_task = task.get('title')
             """Done"""
             csvfile.write('"{}","{}","{}","{}"\n'.format(
