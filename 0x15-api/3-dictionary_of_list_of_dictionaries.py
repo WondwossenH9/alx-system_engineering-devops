@@ -11,7 +11,7 @@ if __name__ == '__main__':
     url = "https://jsonplaceholder.typicode.com/users"
 
     resp = requests.get(url)
-    users = resp.json()
+    Users = resp.json()
 
     users_dict = {}
     for user in Users:
