@@ -16,9 +16,7 @@ sudo apt-get install -y gunicorn
 # Removes the AIRBNB Repositoty
 rm -rf AirBnB_clone_v*
 # Clones repositories
-git clone https://github.com/hardope/AirBnB_clone_v2
-git clone https://github.com/hardope/AirBnB_clone_v3
-git clone https://github.com/hardope/AirBnB_clone_v4
+git clone https://github.com/wondwossenH9/AirBnB_clone_v2
 # Changes directory
 cd AirBnB_clone_v2
 # Switches branches
